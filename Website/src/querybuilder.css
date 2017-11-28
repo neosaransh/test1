@@ -1,0 +1,56 @@
+#querybuilder {
+    width: 100%;
+    table-layout: auto;
+}
+
+#querybuilder td, th {
+    border-bottom: 1px solid white;
+    border-left: none;
+    border-right: none;
+    padding: .5em;
+}
+
+#querybuilder th {
+    border-top: 1px solid white;
+}
+
+.drawer .fancybtn {
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    font-family: 'Saira Condensed', sans-serif;
+    color: rgba(52, 152, 219,1.0);
+    background: #ffffff;
+    padding: 10px 20px 10px 20px;
+    min-width: 5em;
+    border: solid #3599db 1px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.drawer .fancybtn:hover {
+    background: #ebf7ff;
+    text-decoration: none;
+}
+
+.drawer .closebtn {
+    font-family: 'Saira Condensed', sans-serif;
+    background: rgba(52, 152, 219,1.0);
+    border: 0 solid; /* overriding some weird global white->gray gradient background I can't find*/
+    color: #ffffff;
+    padding: 0 20px 0 20px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.drawer .closebtn:hover {
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    background: #ffffff;
+    color: rgba(52, 152, 219,1.0);
+}
+
+.sortableHelper {
+    z-index: 10001; /* z-Index of drawer is 10000 default */
+}

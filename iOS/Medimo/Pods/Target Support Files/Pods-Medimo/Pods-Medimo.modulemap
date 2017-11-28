@@ -1,0 +1,6 @@
+framework module Pods_Medimo {
+  umbrella header "Pods-Medimo-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,4 @@
+[submodule "custom-deps/react-motion-drawer"]
+	path = custom-deps/react-motion-drawer
+	url = https://github.com/magikm18/react-motion-drawer.git
+	branch = local-install

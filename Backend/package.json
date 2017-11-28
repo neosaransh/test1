@@ -1,0 +1,24 @@
+{
+  "name": "backend",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.106.0",
+    "body-parser": "~1.17.1",
+    "debug": "~2.6.3",
+    "express": "^4.15.5",
+    "memory-stream": "0.0.3",
+    "memory-streams": "^0.1.2",
+    "mime-types": "latest",
+    "morgan": "~1.8.1",
+    "node": "^8.3.0",
+    "nodemailer": "^4.0.1",
+    "parse": "^1.10.0",
+    "require-directory": "^2.1.1",
+    "socket.io": "^2.0.3",
+    "tracer": "^0.8.9"
+  }
+}

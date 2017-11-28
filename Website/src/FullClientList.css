@@ -1,0 +1,26 @@
+.clientListNames {
+    /*top:0;*/
+    font-size:15px;
+    border:none;
+    padding: 30px;
+    position:relative;
+    float:left;
+    left:0;
+    left:10px;
+    font-family: 'Saira Condensed', sans-serif;
+    text-align: center;
+    word-wrap: break-word;
+    width:150px;
+    min-height:220px;
+}
+
+.clientListNames:hover {
+    color: rgba(52, 152, 219,1.0);
+}
+
+.clientImage {
+    border-radius:50%;
+    width: 100px;
+    height: 100px;
+    border: 1px solid;
+}

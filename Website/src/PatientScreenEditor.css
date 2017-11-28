@@ -1,0 +1,38 @@
+.react-tabs__tab-panel--selected {
+    overflow: scroll;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.patient-screen-tab table p {
+    margin: 0;
+}
+
+.patient-screen-tab th {
+    border-bottom: 1px black solid;
+}
+
+.patient-screen-tab td {
+    border-top: 1px black solid;
+    height: 3em;
+}
+
+.patient-screen-btn {
+    padding: .1em;
+    min-width: 10em;
+    background-color: #D3D3D3;
+    display: inline-block;
+}
+
+.patient-screen-btn:hover {
+    background-color: #E2E2E2;
+}
+
+.answer-date {
+    color: darkgray;
+    font-size: .8em;
+}
+
+.no-answer {
+    color: darkgray;
+}

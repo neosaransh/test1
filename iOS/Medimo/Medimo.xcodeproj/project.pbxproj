@@ -1,0 +1,793 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		03DDC394C85F632CCE1F645B /* Pods_MedimoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69BA4252855312BAF4212F6B /* Pods_MedimoTests.framework */; };
+		064E25A818D3317F24566B73 /* Pods_Medimo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A973CEDA27986FCCB8C12C4 /* Pods_Medimo.framework */; };
+		2205C5381F3A5D7900629F19 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2205C5371F3A5D7900629F19 /* ProfileViewController.swift */; };
+		2225003E1F369A9400AC4A22 /* SecurityCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2225003D1F369A9400AC4A22 /* SecurityCodeViewController.swift */; };
+		222FAB141F2A908100FC678B /* PasswordResetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222FAB131F2A908100FC678B /* PasswordResetViewController.swift */; };
+		222FAB161F2A92FB00FC678B /* MoodSurveyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222FAB151F2A92FB00FC678B /* MoodSurveyViewController.swift */; };
+		222FAB181F2A9D5200FC678B /* HubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222FAB171F2A9D5200FC678B /* HubViewController.swift */; };
+		222FAB1A1F2AA01800FC678B /* MedimoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222FAB191F2AA01800FC678B /* MedimoModel.swift */; };
+		222FAB1C1F2AA02C00FC678B /* ParseFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222FAB1B1F2AA02C00FC678B /* ParseFunctions.swift */; };
+		22D569851F294F9B00AD6B01 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D569841F294F9B00AD6B01 /* AppDelegate.swift */; };
+		22D569871F294F9B00AD6B01 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D569861F294F9B00AD6B01 /* ViewController.swift */; };
+		22D5698A1F294F9B00AD6B01 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22D569881F294F9B00AD6B01 /* Main.storyboard */; };
+		22D5698D1F294F9B00AD6B01 /* Medimo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 22D5698B1F294F9B00AD6B01 /* Medimo.xcdatamodeld */; };
+		22D5698F1F294F9B00AD6B01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22D5698E1F294F9B00AD6B01 /* Assets.xcassets */; };
+		22D569921F294F9B00AD6B01 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22D569901F294F9B00AD6B01 /* LaunchScreen.storyboard */; };
+		22D5699D1F294F9B00AD6B01 /* MedimoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D5699C1F294F9B00AD6B01 /* MedimoTests.swift */; };
+		22D569A81F294F9C00AD6B01 /* MedimoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D569A71F294F9C00AD6B01 /* MedimoUITests.swift */; };
+		22D569B81F29587C00AD6B01 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D569B71F29587C00AD6B01 /* LoginViewController.swift */; };
+		22D569BB1F29930A00AD6B01 /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D569BA1F29930A00AD6B01 /* Globals.swift */; };
+		22D569BE1F2996D000AD6B01 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D569BD1F2996D000AD6B01 /* SignUpViewController.swift */; };
+		22D569C01F29AB4100AD6B01 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D569BF1F29AB4000AD6B01 /* UIViewControllerExtension.swift */; };
+		E709BAD53C201F5063613CAC /* Pods_MedimoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AF2887044F400D9B92722E2 /* Pods_MedimoUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		22D569991F294F9B00AD6B01 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22D569791F294F9B00AD6B01 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 22D569801F294F9B00AD6B01;
+			remoteInfo = Medimo;
+		};
+		22D569A41F294F9C00AD6B01 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22D569791F294F9B00AD6B01 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 22D569801F294F9B00AD6B01;
+			remoteInfo = Medimo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1F27976CB4A26123E9348919 /* Pods-MedimoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MedimoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MedimoUITests/Pods-MedimoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		2205C5371F3A5D7900629F19 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		2225003D1F369A9400AC4A22 /* SecurityCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecurityCodeViewController.swift; sourceTree = "<group>"; };
+		222FAB131F2A908100FC678B /* PasswordResetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordResetViewController.swift; sourceTree = "<group>"; };
+		222FAB151F2A92FB00FC678B /* MoodSurveyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoodSurveyViewController.swift; sourceTree = "<group>"; };
+		222FAB171F2A9D5200FC678B /* HubViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HubViewController.swift; sourceTree = "<group>"; };
+		222FAB191F2AA01800FC678B /* MedimoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedimoModel.swift; sourceTree = "<group>"; };
+		222FAB1B1F2AA02C00FC678B /* ParseFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseFunctions.swift; sourceTree = "<group>"; };
+		22D569811F294F9B00AD6B01 /* Medimo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Medimo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		22D569841F294F9B00AD6B01 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		22D569861F294F9B00AD6B01 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		22D569891F294F9B00AD6B01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		22D5698C1F294F9B00AD6B01 /* Medimo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Medimo.xcdatamodel; sourceTree = "<group>"; };
+		22D5698E1F294F9B00AD6B01 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		22D569911F294F9B00AD6B01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		22D569931F294F9B00AD6B01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22D569981F294F9B00AD6B01 /* MedimoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MedimoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		22D5699C1F294F9B00AD6B01 /* MedimoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedimoTests.swift; sourceTree = "<group>"; };
+		22D5699E1F294F9C00AD6B01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22D569A31F294F9C00AD6B01 /* MedimoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MedimoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		22D569A71F294F9C00AD6B01 /* MedimoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedimoUITests.swift; sourceTree = "<group>"; };
+		22D569A91F294F9C00AD6B01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22D569B71F29587C00AD6B01 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		22D569BA1F29930A00AD6B01 /* Globals.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Globals.swift; sourceTree = "<group>"; };
+		22D569BD1F2996D000AD6B01 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		22D569BF1F29AB4000AD6B01 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		4655538F98C5219A43862B46 /* Pods-MedimoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MedimoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MedimoTests/Pods-MedimoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		69BA4252855312BAF4212F6B /* Pods_MedimoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MedimoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A973CEDA27986FCCB8C12C4 /* Pods_Medimo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Medimo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		81DD5026401BB46D6CE54901 /* Pods-MedimoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MedimoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MedimoTests/Pods-MedimoTests.release.xcconfig"; sourceTree = "<group>"; };
+		87CAE12E8EC919E8DF839842 /* Pods-Medimo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Medimo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Medimo/Pods-Medimo.release.xcconfig"; sourceTree = "<group>"; };
+		9AF2887044F400D9B92722E2 /* Pods_MedimoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MedimoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBF8FD5E20DA7EA9C92579CB /* Pods-MedimoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MedimoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MedimoUITests/Pods-MedimoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D1935D8C4D3E5402B36DBF69 /* Pods-Medimo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Medimo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Medimo/Pods-Medimo.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		22D5697E1F294F9B00AD6B01 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				064E25A818D3317F24566B73 /* Pods_Medimo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22D569951F294F9B00AD6B01 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03DDC394C85F632CCE1F645B /* Pods_MedimoTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22D569A01F294F9C00AD6B01 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E709BAD53C201F5063613CAC /* Pods_MedimoUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		22D569781F294F9B00AD6B01 = {
+			isa = PBXGroup;
+			children = (
+				22D569831F294F9B00AD6B01 /* Medimo */,
+				22D5699B1F294F9B00AD6B01 /* MedimoTests */,
+				22D569A61F294F9C00AD6B01 /* MedimoUITests */,
+				22D569821F294F9B00AD6B01 /* Products */,
+				C4222D95EE47DAB961400199 /* Pods */,
+				27608E78B96CA47FB6578F18 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		22D569821F294F9B00AD6B01 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				22D569811F294F9B00AD6B01 /* Medimo.app */,
+				22D569981F294F9B00AD6B01 /* MedimoTests.xctest */,
+				22D569A31F294F9C00AD6B01 /* MedimoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		22D569831F294F9B00AD6B01 /* Medimo */ = {
+			isa = PBXGroup;
+			children = (
+				22D569841F294F9B00AD6B01 /* AppDelegate.swift */,
+				22D569861F294F9B00AD6B01 /* ViewController.swift */,
+				222FAB191F2AA01800FC678B /* MedimoModel.swift */,
+				22D569BA1F29930A00AD6B01 /* Globals.swift */,
+				222FAB1B1F2AA02C00FC678B /* ParseFunctions.swift */,
+				22D569881F294F9B00AD6B01 /* Main.storyboard */,
+				22D5698E1F294F9B00AD6B01 /* Assets.xcassets */,
+				22D569BC1F29949400AD6B01 /* ViewControllers */,
+				22D569901F294F9B00AD6B01 /* LaunchScreen.storyboard */,
+				22D569931F294F9B00AD6B01 /* Info.plist */,
+				22D5698B1F294F9B00AD6B01 /* Medimo.xcdatamodeld */,
+			);
+			path = Medimo;
+			sourceTree = "<group>";
+		};
+		22D5699B1F294F9B00AD6B01 /* MedimoTests */ = {
+			isa = PBXGroup;
+			children = (
+				22D5699C1F294F9B00AD6B01 /* MedimoTests.swift */,
+				22D5699E1F294F9C00AD6B01 /* Info.plist */,
+			);
+			path = MedimoTests;
+			sourceTree = "<group>";
+		};
+		22D569A61F294F9C00AD6B01 /* MedimoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				22D569A71F294F9C00AD6B01 /* MedimoUITests.swift */,
+				22D569A91F294F9C00AD6B01 /* Info.plist */,
+			);
+			path = MedimoUITests;
+			sourceTree = "<group>";
+		};
+		22D569BC1F29949400AD6B01 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				2205C5371F3A5D7900629F19 /* ProfileViewController.swift */,
+				2225003D1F369A9400AC4A22 /* SecurityCodeViewController.swift */,
+				222FAB171F2A9D5200FC678B /* HubViewController.swift */,
+				222FAB151F2A92FB00FC678B /* MoodSurveyViewController.swift */,
+				22D569B71F29587C00AD6B01 /* LoginViewController.swift */,
+				22D569BD1F2996D000AD6B01 /* SignUpViewController.swift */,
+				222FAB131F2A908100FC678B /* PasswordResetViewController.swift */,
+				22D569BF1F29AB4000AD6B01 /* UIViewControllerExtension.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		27608E78B96CA47FB6578F18 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6A973CEDA27986FCCB8C12C4 /* Pods_Medimo.framework */,
+				69BA4252855312BAF4212F6B /* Pods_MedimoTests.framework */,
+				9AF2887044F400D9B92722E2 /* Pods_MedimoUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C4222D95EE47DAB961400199 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D1935D8C4D3E5402B36DBF69 /* Pods-Medimo.debug.xcconfig */,
+				87CAE12E8EC919E8DF839842 /* Pods-Medimo.release.xcconfig */,
+				4655538F98C5219A43862B46 /* Pods-MedimoTests.debug.xcconfig */,
+				81DD5026401BB46D6CE54901 /* Pods-MedimoTests.release.xcconfig */,
+				BBF8FD5E20DA7EA9C92579CB /* Pods-MedimoUITests.debug.xcconfig */,
+				1F27976CB4A26123E9348919 /* Pods-MedimoUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		22D569801F294F9B00AD6B01 /* Medimo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22D569AC1F294F9C00AD6B01 /* Build configuration list for PBXNativeTarget "Medimo" */;
+			buildPhases = (
+				8D8F26A74BBCD54E95C846E2 /* [CP] Check Pods Manifest.lock */,
+				22D5697D1F294F9B00AD6B01 /* Sources */,
+				22D5697E1F294F9B00AD6B01 /* Frameworks */,
+				22D5697F1F294F9B00AD6B01 /* Resources */,
+				9085D4044BE3270A7A52D13F /* [CP] Embed Pods Frameworks */,
+				0ED668E381400EBD38173975 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Medimo;
+			productName = Medimo;
+			productReference = 22D569811F294F9B00AD6B01 /* Medimo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		22D569971F294F9B00AD6B01 /* MedimoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22D569AF1F294F9C00AD6B01 /* Build configuration list for PBXNativeTarget "MedimoTests" */;
+			buildPhases = (
+				BFDC6AF5B3E35BC4EAB0C76B /* [CP] Check Pods Manifest.lock */,
+				22D569941F294F9B00AD6B01 /* Sources */,
+				22D569951F294F9B00AD6B01 /* Frameworks */,
+				22D569961F294F9B00AD6B01 /* Resources */,
+				5C8CA89D67D1C75444AAAE62 /* [CP] Embed Pods Frameworks */,
+				FF39AB279C7D540231958D92 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				22D5699A1F294F9B00AD6B01 /* PBXTargetDependency */,
+			);
+			name = MedimoTests;
+			productName = MedimoTests;
+			productReference = 22D569981F294F9B00AD6B01 /* MedimoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		22D569A21F294F9C00AD6B01 /* MedimoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22D569B21F294F9C00AD6B01 /* Build configuration list for PBXNativeTarget "MedimoUITests" */;
+			buildPhases = (
+				0165C1F08B258189C8717D6C /* [CP] Check Pods Manifest.lock */,
+				22D5699F1F294F9C00AD6B01 /* Sources */,
+				22D569A01F294F9C00AD6B01 /* Frameworks */,
+				22D569A11F294F9C00AD6B01 /* Resources */,
+				F75A30673F58DFD727811149 /* [CP] Embed Pods Frameworks */,
+				FAB52B9DADC6483B57B6812E /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				22D569A51F294F9C00AD6B01 /* PBXTargetDependency */,
+			);
+			name = MedimoUITests;
+			productName = MedimoUITests;
+			productReference = 22D569A31F294F9C00AD6B01 /* MedimoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		22D569791F294F9B00AD6B01 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Sam Essery";
+				TargetAttributes = {
+					22D569801F294F9B00AD6B01 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					22D569971F294F9B00AD6B01 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 22D569801F294F9B00AD6B01;
+					};
+					22D569A21F294F9C00AD6B01 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 22D569801F294F9B00AD6B01;
+					};
+				};
+			};
+			buildConfigurationList = 22D5697C1F294F9B00AD6B01 /* Build configuration list for PBXProject "Medimo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 22D569781F294F9B00AD6B01;
+			productRefGroup = 22D569821F294F9B00AD6B01 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				22D569801F294F9B00AD6B01 /* Medimo */,
+				22D569971F294F9B00AD6B01 /* MedimoTests */,
+				22D569A21F294F9C00AD6B01 /* MedimoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		22D5697F1F294F9B00AD6B01 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22D569921F294F9B00AD6B01 /* LaunchScreen.storyboard in Resources */,
+				22D5698F1F294F9B00AD6B01 /* Assets.xcassets in Resources */,
+				22D5698A1F294F9B00AD6B01 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22D569961F294F9B00AD6B01 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22D569A11F294F9C00AD6B01 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0165C1F08B258189C8717D6C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		0ED668E381400EBD38173975 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Medimo/Pods-Medimo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5C8CA89D67D1C75444AAAE62 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MedimoTests/Pods-MedimoTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8D8F26A74BBCD54E95C846E2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9085D4044BE3270A7A52D13F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Medimo/Pods-Medimo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BFDC6AF5B3E35BC4EAB0C76B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F75A30673F58DFD727811149 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MedimoUITests/Pods-MedimoUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FAB52B9DADC6483B57B6812E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MedimoUITests/Pods-MedimoUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FF39AB279C7D540231958D92 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MedimoTests/Pods-MedimoTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		22D5697D1F294F9B00AD6B01 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				222FAB161F2A92FB00FC678B /* MoodSurveyViewController.swift in Sources */,
+				22D569BE1F2996D000AD6B01 /* SignUpViewController.swift in Sources */,
+				22D569B81F29587C00AD6B01 /* LoginViewController.swift in Sources */,
+				22D569871F294F9B00AD6B01 /* ViewController.swift in Sources */,
+				2205C5381F3A5D7900629F19 /* ProfileViewController.swift in Sources */,
+				222FAB141F2A908100FC678B /* PasswordResetViewController.swift in Sources */,
+				22D569851F294F9B00AD6B01 /* AppDelegate.swift in Sources */,
+				222FAB181F2A9D5200FC678B /* HubViewController.swift in Sources */,
+				222FAB1C1F2AA02C00FC678B /* ParseFunctions.swift in Sources */,
+				22D569BB1F29930A00AD6B01 /* Globals.swift in Sources */,
+				22D569C01F29AB4100AD6B01 /* UIViewControllerExtension.swift in Sources */,
+				2225003E1F369A9400AC4A22 /* SecurityCodeViewController.swift in Sources */,
+				222FAB1A1F2AA01800FC678B /* MedimoModel.swift in Sources */,
+				22D5698D1F294F9B00AD6B01 /* Medimo.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22D569941F294F9B00AD6B01 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22D5699D1F294F9B00AD6B01 /* MedimoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22D5699F1F294F9C00AD6B01 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22D569A81F294F9C00AD6B01 /* MedimoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		22D5699A1F294F9B00AD6B01 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 22D569801F294F9B00AD6B01 /* Medimo */;
+			targetProxy = 22D569991F294F9B00AD6B01 /* PBXContainerItemProxy */;
+		};
+		22D569A51F294F9C00AD6B01 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 22D569801F294F9B00AD6B01 /* Medimo */;
+			targetProxy = 22D569A41F294F9C00AD6B01 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		22D569881F294F9B00AD6B01 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				22D569891F294F9B00AD6B01 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		22D569901F294F9B00AD6B01 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				22D569911F294F9B00AD6B01 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		22D569AA1F294F9C00AD6B01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		22D569AB1F294F9C00AD6B01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		22D569AD1F294F9C00AD6B01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1935D8C4D3E5402B36DBF69 /* Pods-Medimo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Medimo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = samessery.Medimo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		22D569AE1F294F9C00AD6B01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87CAE12E8EC919E8DF839842 /* Pods-Medimo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Medimo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = samessery.Medimo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		22D569B01F294F9C00AD6B01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4655538F98C5219A43862B46 /* Pods-MedimoTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MedimoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = samessery.MedimoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Medimo.app/Medimo";
+			};
+			name = Debug;
+		};
+		22D569B11F294F9C00AD6B01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81DD5026401BB46D6CE54901 /* Pods-MedimoTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MedimoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = samessery.MedimoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Medimo.app/Medimo";
+			};
+			name = Release;
+		};
+		22D569B31F294F9C00AD6B01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BBF8FD5E20DA7EA9C92579CB /* Pods-MedimoUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = MedimoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = samessery.MedimoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Medimo;
+			};
+			name = Debug;
+		};
+		22D569B41F294F9C00AD6B01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F27976CB4A26123E9348919 /* Pods-MedimoUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = MedimoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = samessery.MedimoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Medimo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		22D5697C1F294F9B00AD6B01 /* Build configuration list for PBXProject "Medimo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22D569AA1F294F9C00AD6B01 /* Debug */,
+				22D569AB1F294F9C00AD6B01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22D569AC1F294F9C00AD6B01 /* Build configuration list for PBXNativeTarget "Medimo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22D569AD1F294F9C00AD6B01 /* Debug */,
+				22D569AE1F294F9C00AD6B01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22D569AF1F294F9C00AD6B01 /* Build configuration list for PBXNativeTarget "MedimoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22D569B01F294F9C00AD6B01 /* Debug */,
+				22D569B11F294F9C00AD6B01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22D569B21F294F9C00AD6B01 /* Build configuration list for PBXNativeTarget "MedimoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22D569B31F294F9C00AD6B01 /* Debug */,
+				22D569B41F294F9C00AD6B01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		22D5698B1F294F9B00AD6B01 /* Medimo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				22D5698C1F294F9B00AD6B01 /* Medimo.xcdatamodel */,
+			);
+			currentVersion = 22D5698C1F294F9B00AD6B01 /* Medimo.xcdatamodel */;
+			path = Medimo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 22D569791F294F9B00AD6B01 /* Project object */;
+}

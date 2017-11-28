@@ -1,0 +1,98 @@
+#profile {
+    width: 100%;
+    height: 100%;
+}
+
+#top, #bottom {
+    display: flex;
+    background-color: white;
+}
+
+#bottom{
+    border-top: 1px solid #999;
+    padding: 0;
+}
+
+/*PAGE COMPONENTS*/
+/*
+table: Styling for tables
+td, th: Styling for table cells
+dataCell: Setting td width and overflow handling
+clientProfile: Client name/picture/summary
+profilePicImg: Client picture specific styling
+clientDataSummary: Client summary specific styling
+clientDataTable: Table of patient info
+clientGraph: Graph area
+clientFilter: Data filter area
+ */
+
+table {
+    border-collapse: collapse;
+    height: 100%;
+    width: 100%;
+}
+
+#clientDataTable td, #clientDataTable th {
+    border: 1px solid #999;
+    border-bottom: none;
+    padding: 0.5rem;
+    text-align: left;
+}
+
+#clientDataTable th {
+    border-top: none;
+    border-bottom: 1px solid #999;
+    border-left: 1px solid #999;
+}
+
+#tableheader {
+    border-top: none;
+}
+
+#dataCell {
+    word-wrap: break-word;
+    width: 75%;
+}
+
+#clientProfile {
+    width: 55%;
+    float: left;
+}
+
+#profilePicImg{
+    max-height: 40%;
+    max-width: 35%;
+    padding-top: 3%;
+}
+
+#clientDataSummary {
+    padding-top: 5%;
+}
+
+#clientDataTable {
+    flex-grow: 1;
+}
+
+#clientGraph {
+    height: 50%;
+    width: 100%;
+    padding-left: 5%;
+    text-align: center;
+    padding-bottom: 5%
+}
+
+/* #clientFilter {
+    width: auto;
+    height: auto;
+    flex-grow: 1;
+    float: right;
+    text-align: center;
+    border-left: 1px solid #999;
+} */
+
+.backgroundOverride{
+  background-color: white;
+  width:100%;
+  height:100%;
+    display: inline-block;
+}

@@ -1,0 +1,20 @@
+.pageFooter{
+  background-color: rgba(44, 62, 80,1.0);
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 2vh;
+  margin-top:3vh;
+  color: white;
+  font-size: 1.4vh;
+  bottom:0;
+}
+.pageHeaderText{
+  color: white;
+  font-size: 11vh;
+  margin-left: 1vw;
+}
+body{
+  text-align: center;
+}

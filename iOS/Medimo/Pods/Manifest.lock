@@ -1,0 +1,23 @@
+PODS:
+  - Bolts-Swift (1.3.0)
+  - Bolts/Tasks (1.8.4)
+  - Charts (3.0.2):
+    - Charts/Core (= 3.0.2)
+  - Charts/Core (3.0.2)
+  - Parse (1.15.1):
+    - Bolts/Tasks (~> 1.8)
+
+DEPENDENCIES:
+  - Bolts-Swift
+  - Charts
+  - Parse
+
+SPEC CHECKSUMS:
+  Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
+  Bolts-Swift: fa98d1b59fc1acea9b21a21306dcdca1c85e3737
+  Charts: 236d6ccdd0ce6feae151d89e829a7397381a21fd
+  Parse: b7a77b20b8a6dede8058da1e2b339593578ce158
+
+PODFILE CHECKSUM: 6c51a0581e7e6e6c2143f37a76b3a4ca229525d9
+
+COCOAPODS: 1.2.0

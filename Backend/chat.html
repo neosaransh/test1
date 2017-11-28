@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+<head>
+    <title>Medimo Chat</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font: 18px Helvetica, Arial; }
+        form { background: #000; padding: 3px; position: fixed; bottom: 0; width: 100%; }
+        form input { border: 0; padding: 10px; width: 90%; margin-right: .5%; }
+        form button { width: 9%; background: rgb(130, 224, 255); border: none; padding: 10px; }
+        #messages { list-style-type: none; margin: 0; padding: 25px 25px 50px 25px; }
+        #messages li { padding: 5px; }
+        .sent {
+            text-align: right;
+        }
+        .received {
+            text-align: left;
+        }
+        .sent span {
+            background: #048DFF;
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 25px;
+            max-width: 80%;
+        }
+        .received span {
+            background: #DBDBDB;
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 25px;
+            max-width: 80%;
+        }
+        #messages span img {
+            padding: 10px 0;
+            border-radius: 25px;
+            max-height: 300px;
+            display: block;
+            width: auto;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+<ul id="messages"></ul>
+<form action="">
+    <input id="m" autocomplete="off" /><button>Send</button>
+</form>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.js" integrity="sha256-sdmLD9jD1PIzq3KOQPNSGZYxjv76rds79Mnyk5JNp1M=" crossorigin="anonymous"></script>
+<script>
+    var userId = null;
+
+    function addMessage(sender, recipient, sentAt, contentType, contents, animate) {
+        switch (contentType) {
+          case 'text':
+            $('#messages').append($('<li class="' + (sender === 'me' ? 'sent' : 'received') + '">').append($('<span>').text(contents)));
+            break;
+          case 'image':
+            $('#messages').append($('<li class="' + (sender === 'me' ? 'sent' : 'received') + '">').append($('<span><img src="/chat/images/' + contents + '"></span>')));
+        }
+
+        $("html").animate({ scrollTop: $('html').prop("scrollHeight")}, animate ? 1000 : 0);
+    }
+
+    $(function() {
+        var auth = {
+            'username': 'other.user',
+            'password': 'password'
+        };
+
+        $.ajax({
+            url: '/login',
+            method: 'POST',
+            data: auth
+        }).success(function(data, textStatus, jqXHR) {
+            console.info("Connecting to socket.io");
+
+            var socket = io({
+                query: {
+                    'session_token': data.session_token
+                }
+            });
+
+            $.ajax({
+                url: '/chat/messages',
+                method: 'GET',
+                beforeSend: function(xhr) {
+                    xhr.setRequestHeader('x-medimo-api-session', data.session_token)
+                }
+            }).success(function(data) {
+                for (var item in data) {
+                    addMessage(data[item]['sender'], data[item]['recipient'], data[item]['sent_at'], data[item]['content_type'], data[item]['contents'], false)
+                }
+            });
+
+            $('form').submit(function() {
+                var data = {
+                    "recipient": "gKThM7GOjE",
+                    "sent_at": new Date().toISOString(),
+                    "content_type": "text",
+                    "contents": $('#m').val()
+                };
+
+                addMessage('me', data.recipient, data.sent_at, data.content_type, data.contents, true);
+
+                socket.emit('chat-message-send', data, function(ack) {
+                  console.log(ack);
+                });
+
+                $('#m').val('');
+                return false;
+            });
+
+            socket.on('chat message', function(msg) {
+                addMessage(msg.sender, msg.recipient, msg.sent_at, msg.content_type, msg.contents, true);
+            });
+
+            socket.connect();
+
+            console.log('Connected');
+        }).error(function(jqXHR, textStatus, errorThrown) {
+            console.log("Unable to fetch token: " + errorThrown)
+        });
+    });
+</script>
+</body>
+</html>

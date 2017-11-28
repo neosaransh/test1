@@ -1,0 +1,51 @@
+#newpatient form {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+#newpatient form input {
+    display: block;
+    width: calc(100% - 10em);
+    margin-left: 10em;
+    margin-right: 0;
+    box-sizing: border-box;
+}
+
+#newpatient form > div {
+    height: 3em;
+}
+
+#newpatient form > div > p {
+    float: left;
+    display: block;
+    margin: 0;
+    width: 10em;
+    height: 100%;
+    text-align: right;
+}
+
+#newpatient form > div > p > span {
+    width: auto;
+    display: inline-block;
+    position: relative;
+    right: 0;
+    height: 100%;
+}
+
+#newpatient form label {
+    display: flex;
+    align-items: center;
+    font-size: 18pt;
+    text-align: right;
+    height: 100%;
+}
+
+#newpatient > code {
+    display: inline-block;
+    padding: 0.75em;
+    font-family: "DejaVu Sans Mono", monospace;
+    font-size: 24pt;
+    background-color: lightgray;
+    border: 2px black solid;
+    border-radius: .5em;
+}
